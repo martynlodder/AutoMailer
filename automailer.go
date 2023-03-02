@@ -36,7 +36,7 @@ func main() {
 
 	// Connect to the server, authenticate, set the sender and recipient,
 	// and send the email all in one step.
-	err = smtp.SendMail("smtp.office365.com:587", auth, config.Email, []string{"500334@student.fontys.nl"}, []byte("Subject: Test email\n\nThis is a test email."))
+	err = smtp.SendMail("smtp.office365.com:587", auth, config.Email, []string{"PCN@student.fontys.nl"}, []byte("Subject: Test email\n\nThis is a test email."))
 	if err != nil {
 		log.Fatal(err)
 	}
